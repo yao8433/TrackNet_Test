@@ -1,0 +1,136 @@
+# Enhanced Badminton Rally Segmentation - .gitignore
+
+# ================================
+# Large Model Files (Download separately)
+# ================================
+models/tracknetv3/*.pt
+models/tracknetv3/*.pth
+models/**/*.pt
+models/**/*.pth
+
+# ================================
+# Output Video Files & Predictions  
+# ================================
+clips/
+!clips/.gitkeep
+data/predictions/
+!data/predictions/.gitkeep
+data/raw/
+!data/raw/.gitkeep
+
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ================================
+# Virtual Environments
+# ================================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# ================================
+# PyTorch & ML
+# ================================
+*.pth
+*.pkl
+*.pickle
+checkpoints/
+logs/
+runs/
+wandb/
+
+# ================================
+# Jupyter Notebooks
+# ================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ================================
+# IDE & Editors
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ================================
+# macOS
+# ================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ================================
+# Temporary & Test Files
+# ================================
+tmp/
+temp/
+test_output/
+*.tmp
+*.log
+
+# ================================
+# Video Files (too large for git)
+# ================================
+*.mp4
+*.avi
+*.mov
+*.MOV
+*.mkv
+*.wmv
+*.flv
+*.webm
+
+# ================================
+# Large CSV Files (trajectory data)
+# ================================
+*.csv
+!requirements.txt
+
+# ================================
+# FFmpeg temporary files
+# ================================
+ffmpeg*.log
+
+# ================================
+# Keep Essential Directories
+# ================================
+!clips/.gitkeep
+!data/.gitkeep
+!data/predictions/.gitkeep
+!data/raw/.gitkeep
+!models/.gitkeep
+!models/tracknetv3/.gitkeep 

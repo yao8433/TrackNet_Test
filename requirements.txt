@@ -1,0 +1,17 @@
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Computer vision and ML
+opencv-python>=4.5.0
+torch>=1.11.0
+torchvision>=0.12.0
+
+# Video processing (ffmpeg must be installed separately)
+# Install ffmpeg: brew install ffmpeg (macOS) or apt install ffmpeg (Ubuntu)
+
+# Optional: for advanced trajectory analysis
+scipy>=1.9.0
+
+# Development dependencies
+pytest>=7.0.0 
